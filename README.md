@@ -1,1 +1,1 @@
-# Domain for LinuxLearningPlatform
+# Domain for www.linuxlearningplatform.me
