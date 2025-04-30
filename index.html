@@ -3,94 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linux Learning Platform</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #0078d7;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        .card {
-            background: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 1rem 0;
-            padding: 1rem;
-        }
-    </style>
+    <title>Dish Management</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <h1>Linux Learning Platform</h1>
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#courses">Courses</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <main>
-        <section id="home">
-            <div class="card">
-                <h2>Welcome to Linux Learning Platform</h2>
-                <p>Learn Linux from the basics to advanced concepts with our curated resources and courses.</p>
-            </div>
-        </section>
-        <section id="courses">
-            <div class="card">
-                <h2>Courses</h2>
-                <p>Explore our beginner, intermediate, and advanced Linux courses.</p>
-            </div>
-        </section>
-        <section id="resources">
-            <div class="card">
-                <h2>Resources</h2>
-                <p>Access tutorials, guides, and tools to enhance your Linux skills.</p>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="card">
-                <h2>Contact</h2>
-                <p>Have questions? Reach out to us at <a href="mailto:support@linuxlearning.com">support@linuxlearning.com</a>.</p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Linux Learning Platform. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>Dish Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="#addDishForm">Add Dish</a></li>
+                    <li><a href="#dishTableBody">Dish Table</a></li>
+                    <li><a href="#address">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form id="addDishForm" autocomplete="on">
+                <h2>Add New Dish</h2>            
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+                
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" name="ingredients" autocomplete="name" required>
+                
+                <label for="preparationSteps">Preparation Steps:</label>
+                <input type="text" id="preparationSteps" name="preparationSteps" autocomplete="name" required>
+                
+                <label for="cookingTime">Cooking Time:</label>
+                <input type="text" id="cookingTime" name="cookingTime" autocomplete="name" required>
+                
+                <label for="origin">Origin:</label>
+                <input type="text" id="origin" name="origin" autocomplete="name" required>
+                
+                <label for="spiceLevel">Spice Level:</label>
+                <input type="text" id="spiceLevel" name="spiceLevel" autocomplete="name" required>
+                
+                <button type="submit">Add Dish</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Ingredients</th>
+                        <th>Preparation Steps</th>
+                        <th>Cooking Time (min)</th>
+                        <th>Origin</th>
+                        <th>Spice Level</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="dishTableBody">
+                    <!-- Rows will be populated dynamically -->
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <address id="address">
+                <p>&copy; Daniel Jönsson</p>
+                <p><a href="mailto:daniel.jonsson0131@stud.hkr.se">daniel.jonsson0131@stud.hkr.se</a></p>
+            </address>
+        </footer>
+        <a href="#" id="scroll-to-top">Scroll To Top</a>
+    </div>
 </body>
+<script src="./script.js"></script>
 </html>

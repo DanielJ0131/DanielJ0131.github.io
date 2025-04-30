@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a {
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer a:hover{
+    background: #555;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    white-space: nowrap;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+form button {
+    align-self: center;
+    white-space: nowrap;
+    width: 125px;
+    transition: background-color 0.3s ease;
+}
+
+table {
+    padding: 4rem;
+    border-collapse: collapse;
+    font-size: 1rem;
+    text-align: left;
+    overflow-x: auto; 
+    display: block; 
+}
+
+table button {
+    text-align: center;
+    align-self: center;
+    margin: 10px;
+    width: 90%;
+    transition: background-color 0.3s ease;
+}
+
+th, td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+}
+
+td{
+    text-align: center;
+}
+
+td:nth-child(3) {
+    max-width: 150px;
+    word-wrap: break-word;
+}
+
+
+th {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+form {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    width: 90%; 
+    margin: 0 auto; 
+    display: block;
+}
+
+input {
+    width: 90%; 
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+    display: block; 
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scroll-to-top:hover {
+    background-color: #555;
+}
+
+/* Add media query for small screens */
+@media (max-width: 1024px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    table {
+        display: flex;
+        padding: 1rem;
+        font-size: 0.9rem;
+        display: block;
+    }
+
+    th, td {
+        padding: 0.5rem;
+        text-align: left;
+        word-wrap: break-word;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+    }
+
+    td:nth-child(3) {
+        max-width: unset;
+        word-wrap: normal;
+    }
+}
