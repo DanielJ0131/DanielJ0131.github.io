@@ -4,12 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linux Learning Platform</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+    }
+    header {
+        background-color: #0d00c3;
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+    }
+    header h1 {
+        margin: 0;
+    }
+    nav {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .hero {
+        text-align: center;
+        padding: 2rem;
+        background-color: #e8f5e9;
+    }
+    .hero h2 {
+        margin: 0;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .card {
+        background: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin: 1rem;
+        padding: 1rem;
+        width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .card h3 {
+        margin-top: 0;
+    }
+    .card p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        margin-top: 2rem;
+    }
+</style>
 <body>
     <div class="container">
         <header>
-            <h1>Linux Learning Platform - LXLP</h1>
+            <h1>Linux Learning Platform</h1>
         </header>
         <nav>
             <a href="#about">About</a>
@@ -29,9 +100,45 @@
                 <h3>Shell Scripting</h3>
                 <p>Learn how to automate tasks and write powerful scripts using the Linux shell.</p>
             </section>
-            <secton class="card">
-                <h3>Linux System Administration</h3>
-                <p>Master the skills needed to manage and maintain Linux systems effectively.</p>
+            <section class="card">
+                <h3>Linux Gaming Tutorial</h3>
+                <p>Discover how to set up and optimize your Linux system for gaming, including using tools like Proton and Wine.</p>
+            </section>
+            <section class="card">
+                <h3>Dual Booting Windows + Linux</h3>
+                <p>Learn how to set up a dual-boot system to run both Windows and Linux on the same machine.</p>
+            </section>
+            <section class="card">
+                <h3>Docker Tutorial</h3>
+                <p>Understand the basics of Docker, containerization, and how to deploy applications using Docker on Linux.</p>
+            </section>
+            <section class="card">
+                <h3>Raspberry Pi Server Tutorial</h3>
+                <p>Learn how to set up a Raspberry Pi as a server for hosting websites, applications, or media streaming.</p>
+            </section>
+            <section class="card">
+                <h3>Linux Networking Basics</h3>
+                <p>Explore the fundamentals of networking in Linux, including configuring IP addresses, DNS, and troubleshooting connectivity issues.</p>
+            </section>
+            <section class="card">
+                <h3>Advanced Linux Permissions</h3>
+                <p>Master advanced file permissions, ACLs, and SELinux to secure your Linux environment effectively.</p>
+            </section>
+            <section class="card">
+                <h3>Linux System Monitoring</h3>
+                <p>Learn how to monitor system performance using tools like top, htop, and system logs.</p>
+            </section>
+            <section class="card">
+                <h3>Linux Security Essentials</h3>
+                <p>Understand the best practices for securing your Linux system, including firewalls, SSH hardening, and intrusion detection.</p>
+            </section>
+            <section class="card">
+                <h3>Linux Kernel Compilation</h3>
+                <p>Delve into the process of compiling and customizing the Linux kernel for your specific needs.</p>
+            </section>
+            <section class="card">
+                <h3>Linux Backup and Recovery</h3>
+                <p>Learn how to create reliable backup strategies and recover data efficiently in Linux.</p>
             </section>
         </section>
         <footer>
